@@ -1,3 +1,21 @@
+if(NOT GUROBI_DIR AND NOT GUROBI_VERSION)
+  set(local_dir "/Library/gurobi1203/macos_universal2")
+  if (EXISTS ${local_dir}
+      AND EXISTS "${local_dir}/include/gurobi_c.h"
+      AND EXISTS "${local_dir}/lib")
+    set(GUROBI_DIR ${local_dir})
+    set(GUROBI_VERSION 120)
+  else()
+    set(local_dir "/opt/gurobi1300/linux64")
+    if (EXISTS ${local_dir}
+        AND EXISTS "${local_dir}/include/gurobi_c.h"
+        AND EXISTS "${local_dir}/lib")
+      set(GUROBI_DIR ${local_dir})
+      set(GUROBI_VERSION 130)
+    endif()
+  endif()
+endif()
+
 #Define directories where GUROBI should be searched for
 if(NOT GUROBI_DIR)
 	message(WARNING "GUROBI not defined.")

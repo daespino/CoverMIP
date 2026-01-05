@@ -1,0 +1,29 @@
+# Code style
+BasedOnStyle: Google
+
+IndentWidth: 2
+TabWidth: 2
+UseTab: Never
+ColumnLimit: 80
+Language: Cpp
+Standard: c++20
+
+AllowAllConstructorInitializersOnNextLine: true
+AllowAllArgumentsOnNextLine: true
+AlignAfterOpenBracket: AlwaysBreak
+AlignConsecutiveAssignments: 'true'
+AlignConsecutiveDeclarations: 'false'
+AlignTrailingComments: 'true'
+AlignOperands: 'true'
+BreakFunctionDefinitionParameters: false
+BinPackParameters: true
+BinPackArguments: true
+BracedInitializerIndentWidth: 2
+#BinPackLongBracedList: true
+ContinuationIndentWidth: 2
+ExperimentalAutoDetectBinPacking: true
+FixNamespaceComments: true
+ShortNamespaceLines: 0
+PackConstructorInitializers: BinPack
+QualifierAlignment: Left
+ReferenceAlignment: Left
