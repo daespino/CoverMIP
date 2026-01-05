@@ -1,3 +1,8 @@
+# Build directories
+bin/
+build/
+lib/
+
 # Prerequisites
 *.d
 
@@ -16,6 +21,14 @@
 
 # Debugger Files
 *.pdb
+
+# tags and cscope files
+cscope.files
+cscope.out
+tags
+
+# VI swaps
+.*.sw?
 
 # Compiled Dynamic libraries
 *.so
